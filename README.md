@@ -1,24 +1,14 @@
-# vue-news
+# VUE_NEWS
 
-## Project setup
-```
-npm install
-```
+## Description
+A simple [Vuejs](https://vuejs.org) web application designed and developed to display headline news from different catergories. Users can search for articles they might be interested in using queries. Users can also register/login to bookmark interesting news articles they might want to read later(all bookmarked news would be saved to local storage)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Technologies Used
+[Vuejs](https://vuejs.org)
+[NewsAPI](https://newsapi.org/)
+[Tailwind CSS](https://https://tailwindcss.com/)
+[Vue Feather Icons](https://github.com/egoist/vue-feather-icons)
+[Google Fonts](https://fonts.google.com/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Live Demo
+A live demo of what the site currently looks like can be found [here](https://pensive-snyder-9583da.netlify.app/)
