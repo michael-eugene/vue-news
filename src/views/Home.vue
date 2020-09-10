@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <button @click="getNews" class="bg-red-400 rounded border border-black">Display News</button>
     <p class="text-xl">Top Headlines</p>
     <div class="flex flex-wrap justify-center items-center">
       <!-- BEGIN -->
@@ -50,18 +49,17 @@ export default {
       topHeadlines: [],
     };
   },
-  methods: {
-    getNews() {
-      fetch(
-        "http://newsapi.org/v2/top-headlines?sources=bbc-news&language=en&apiKey=4d20ffa98f524a59b78898e64de3393f"
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data.articles);
-          this.topHeadlines = data.articles;
-          this.isLoaded = true;
-        });
-    },
+  methods: {},
+  created() {
+    fetch(
+      "http://newsapi.org/v2/top-headlines?sources=bbc-news&language=en&apiKey=4d20ffa98f524a59b78898e64de3393f"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.articles);
+        this.topHeadlines = data.articles;
+        this.isLoaded = true;
+      });
   },
 };
 </script>
