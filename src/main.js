@@ -4,6 +4,10 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
+import './css/styles.css'
+import PrimaryButton from './components/global/PrimaryButton.vue'
+Vue.component('pry-btn', PrimaryButton)
+
 Vue.config.productionTip = false
 
 new Vue({
