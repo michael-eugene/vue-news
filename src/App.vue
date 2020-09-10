@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="h-screen">
+  <div id="app" class="h-screen font-syne">
     <div id="header">
       <app-header></app-header>
     </div>
