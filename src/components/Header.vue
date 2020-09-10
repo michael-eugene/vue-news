@@ -3,7 +3,7 @@
     <div id="top_nav" class="flex justify-between items-center p-5">
       <p class="text-3xl">NEWS</p>
       <menu-icon class="md:hidden" @click="isActive = !isActive"></menu-icon>
-      <ul class="sm:hidden md:flex justify-between items-center">
+      <ul class="hidden md:flex justify-between items-center">
         <li class="mx-2">
           <router-link to="/">Home</router-link>
         </li>
@@ -11,8 +11,11 @@
           <router-link to="/about">About</router-link>
         </li>
         <li class="mx-2">
+          <router-link to="/bookmarks">Bookmarks</router-link>
+        </li>
+        <li class="mx-2">
           <div>
-            <router-link to="/profile" v-if="status">Profile</router-link>
+            <router-link to="/profile" v-if="user.status">Profile</router-link>
             <router-link to="/auth" v-else>Login/Register</router-link>
           </div>
         </li>
@@ -39,7 +42,7 @@ export default {
       isActive: false,
     };
   },
-  computed: mapState(['status']),
+  computed: mapState(['user']),
   watch: {},
 };
 </script>

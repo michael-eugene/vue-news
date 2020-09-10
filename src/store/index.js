@@ -5,7 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    status: true,
+    user: {
+      status: false,
+      fullName: '',
+      email: ''
+    },
     articles: []
   },
   mutations: {
@@ -16,7 +20,6 @@ export default new Vuex.Store({
   },
   modules: {},
   getters: {
-    status: state => state.status,
-    articles: state => state.articles
+    user: state => state.user
   },
 })
